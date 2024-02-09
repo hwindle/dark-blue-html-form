@@ -1,59 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sign Up Form</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <main>
-    <div class="left-side" aria-role="hidden">
-      <p id="logo"><p class="odin-svg" aria-role="hidden"></p> Odin</p>
-      <p class="image-credits">Photo by <a href="#">name</a> on <a href="#">unsplash</a>.</p>
-    </div>
-    <div class="form-area">
-      <p class="description">This is not a real online service! You know you need something like this in your life to help you realise your deepest dreams. Sign up <em>now</em> to get started.</p>
-      <h3>You know you want to</h3>
-      <form>
-        <h4>Let's do this!</h4>
-        <div class="form-row">
-          <div class="input-group">
-            <label for="firstname">First Name</label>
-            <input type="text" id="firstname" required>
-          </div>
-          <div class="input-group">
-            <label for="lastname">Last Name</label>
-            <input type="text" id="lastname" required>
-          </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="left-side">
+        <div id="logo">
+          <p class="odin-svg" aria-role="hidden"></p>
+          Odin
         </div>
-        <div class="form-row">
-          <div class="input-group">
-            <label for="email">Email</label>
-            <input type="email" id="email" required>
+        <p class="image-credits">
+          Photo by
+          <a
+            href="https://unsplash.com/@wolfgang_hasselmann?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Wolfgang Hasselmann</a
+          >
+          on
+          <a
+            href="https://unsplash.com/photos/a-lone-tree-stands-alone-in-the-middle-of-a-field-Hq4nVHQAa9o?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
+            >Unsplash</a
+          >
+        </p>
+      </div>
+      <div class="form-area">
+        <p class="description">
+          This is not a real online service! You know you need something like
+          this in your life to help you realise your deepest dreams. Sign up
+          <em>now</em> to get started.
+        </p>
+        <h3>You know you want to</h3>
+        <form>
+          <h4>Let's do this!</h4>
+          <div class="form-row">
+            <div class="input-group">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstname" required />
+            </div>
+            <div class="input-group">
+              <label for="lastname">Last Name</label>
+              <input type="text" id="lastname" required />
+            </div>
           </div>
-          <div class="input-group">
-            <label for="phone">Phone Number</label>
-            <input type="text" id="phone" required>
+          <div class="form-row">
+            <div class="input-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" required />
+            </div>
+            <div class="input-group">
+              <label for="phone">Phone Number</label>
+              <input type="text" id="phone" required />
+            </div>
           </div>
-        </div>
-        <div class="form-row">
-          <div class="input-group">
-            <label for="password-1">Password</label>
-            <input type="password" id="password-1" required>
-            <span class="error hidden">* Passwords do not match</span>
+          <div class="form-row">
+            <div class="input-group">
+              <label for="password-1">Password</label>
+              <input type="password" id="password-1" required />
+              <span class="error hidden">* Passwords do not match</span>
+            </div>
+            <div class="input-group">
+              <label for="password-2">Password</label>
+              <input type="password" id="password-2" required />
+            </div>
           </div>
-          <div class="input-group">
-            <label for="password-2">Password</label>
-            <input type="password" id="password-2" required>
-          </div>
-        </div>
-      </form>
-      <section class="register-login">
-        <button id="create-account">Create Account</button>
-        <p class="login-msg">Already have an account? <a href="#">Log in</a></p>
-      </section>
-    </div>
-  </main>
-</body>
+        </form>
+        <section class="register-login">
+          <button id="create-account">Create Account</button>
+          <p class="login-msg">
+            Already have an account? <a href="#">Log in</a>
+          </p>
+        </section>
+      </div>
+    </main>
+  </body>
 </html>

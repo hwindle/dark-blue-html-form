@@ -9,3 +9,69 @@ body {
   font-family: 'Segoe UI', 'Noto sans', Tahoma, Geneva, Verdana, sans-serif;
   background-color: #f9fafb;
 }
+
+@font-face {
+  font-family: 'odin';
+  src: url('./pics/Norse-Bold.otf');
+}
+
+/*** left side ***/
+div#logo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-family: 'odin';
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: white;
+  padding: 2rem 1rem;
+  margin-top: 200px;
+}
+
+p.odin-svg {
+  width: 100px;
+  height: 150px;
+  background-image: url('./pics/odin-lined.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+div.left-side {
+  width: 100%;
+  height: 100vh;
+  background-image: url('./pics/wolfgang-hasselmann-Hq4nVHQAa9o-unsplash.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+p.image-credits {
+  padding: 1rem;
+}
+
+p.image-credits, p.image-credits a {
+  color: white;
+  text-align: center;
+}
+
+
+/*** media queries ***/
+@media screen and (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 30% auto;
+  }
+
+}
+
+@media screen and (min-width: 1200px) {
+  main {
+    grid-template-columns: 40% auto;
+  }
+}
