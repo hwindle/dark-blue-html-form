@@ -22,7 +22,7 @@ div#logo {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   font-family: 'odin';
   font-size: 4rem;
   text-transform: uppercase;
@@ -58,6 +58,39 @@ p.image-credits {
 p.image-credits, p.image-credits a {
   color: white;
   text-align: center;
+}
+
+/*** form area ***/
+div.form-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+p.description, div.form-area > h3 {
+  padding: 0 3rem 0 2rem;
+  max-width: 50ch;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+form {
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(54, 54, 54, 0.7);
+  padding: 1.5rem 2rem;
+}
+
+form > h4 {
+  font-size: 1.5rem;
+}
+
+div.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
 }
 
 
