@@ -91,12 +91,6 @@ form > h4 {
   font-size: 1.5rem;
 }
 
-div.form-row {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
-}
-
 div.input-group {
   padding-top: 1rem;
 }
@@ -105,7 +99,7 @@ label,
 input,
 span.error {
   display: block;
-  width: 70%;
+  width: 100%;
 }
 
 span.error.hidden {
@@ -125,12 +119,52 @@ input {
   font-size: 1.1rem;
   border: 1px solid #ccc;
   border-radius: 3px;
-  /* box-shadow: 1px 1px 3px transparent; */
 }
 
 input:focus {
   box-shadow: 0 0 0 2px rgb(10, 10, 160), 
-    1px 1px 3px 0 rgba(54, 54, 54, 0.7);
+    2px 2px 6px 0 rgba(54, 54, 54, 0.8);
+}
+
+input.validation-error {
+  box-shadow: 0 0 0 2px rgb(173, 12, 12);
+}
+
+span.error {
+  font-size: 0.7rem;
+  color: rgb(173, 12, 12);
+}
+
+/*** register/login button area ***/
+section.register-login {
+  padding: 0 3rem 0 2rem;
+}
+
+button {
+  display: block;
+  border: none;
+  margin: 2rem 0;
+  padding: 1.3rem 3rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: rgb(250, 39, 78);
+  color: white;
+  box-shadow: 2px 2px 6px 0 rgba(54, 54, 54, 0.8);
+  border-radius: 7px;
+}
+
+button:hover {
+  background-color: #002f57;
+}
+
+a, a:active, a:visited {
+  color: rgb(250, 39, 78);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
 }
 
 /*** media queries ***/
@@ -138,6 +172,19 @@ input:focus {
   main {
     display: grid;
     grid-template-columns: 30% auto;
+  }
+
+  div.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  
+  label,
+  input,
+  span.error {
+    display: block;
+    width: 70%;
   }
 }
 
